@@ -50,10 +50,13 @@ export default function Map() {
 
     console.log('marker', marker)
 
+    let REACT_APP_MXACCESSTOKEN='pk.eyJ1IjoibWFuaXNoMDE2IiwiYSI6ImNrYjI5N2toYTBrZ3QzMm1pcGRtbXQ4ZzkifQ.eHhGnS2gNhK5LMg7-4TsWA'
+
+
     return (
         <div className='ml-5'>
             <ReactMapGL
-                mapboxApiAccessToken={process.env.REACT_APP_MXACCESSTOKEN}
+                mapboxApiAccessToken={REACT_APP_MXACCESSTOKEN}
                 mapStyle="mapbox://styles/mapbox/streets-v11"
                 {...viewport}
                 onViewportChange={(viewport) => setViewport(viewport)}
